@@ -32,7 +32,7 @@ function drawOrange() {
 	let context = canvas.getContext("2d");
 
 	context.beginPath();
-	context.fillStyle = "orange";
+	context.fillStyle = "red";
 	context.arc(100, 100, 50, 0, Math.PI * 2);
 	context.fill();
 }

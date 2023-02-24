@@ -18,64 +18,76 @@ function setup(){
 }
 
 function drawJ(){
-    context.fillStyle = "red";
-    context.lineWidth = 3;
+    context.strokeStyle = "red";
+    context.lineWidth = 10;
     context.beginPath();
-    context.rect(30, 20, 10,50);
-    context.rect(15, 60, 15,10); 
-    context.fill();
+    context.moveTo(35, 20);
+    context.lineTo(35,55);
+    context.lineTo(15,55); 
+    context.stroke();
 }
 
 function drawA(){
-    context.fillStyle = "orange";
-    context.lineWidth = 3;
+    context.strokeStyle = "orange";
+    context.lineWidth = 10;
     context.beginPath();
-    context.rect(50, 20, 10,50);
-    context.rect(75, 20, 10,50);
-    context.rect(50, 20, 25,10);
-    context.rect(50, 40, 25,10);
-    context.fill();
+    context.moveTo(50, 20);
+    context.lineTo(50, 60);
+    context.moveTo(50,25);
+    context.lineTo(75,25)
+    context.lineTo(75, 60);
+    context.moveTo(50, 40);
+    context.lineTo(75, 40);
+    context.stroke();
 }
 
 function drawNy(){
-    context.fillStyle = "yellow";
-    context.lineWidth = 3;
+    context.strokeStyle = "yellow";
+    context.lineWidth = 10;
     context.beginPath();
-    context.rect(95, 20, 10, 50);
-    context.rect(120, 25, 10, 45);
-    context.rect(95, 25, 25, 10);
-    context.fill();
+    context.moveTo(90, 60);
+    context.lineTo(90, 20);
+    context.moveTo(90, 28);
+    context.lineTo(115, 28);
+    context.lineTo(115, 60);
+    context.stroke();
 }
 
 function drawNg(){
-    context.fillStyle = "green";
-    context.lineWidth = 3;
+    context.strokeStyle = "green";
+    context.lineWidth = 10;
     context.beginPath();
-    context.rect(140, 20, 10, 50);
-    context.rect(165, 25, 10, 45);
-    context.rect(140, 25, 25, 10);
-    context.fill();
+    context.moveTo(130, 20);
+    context.lineTo(130, 60);
+    context.moveTo(130, 28);
+    context.lineTo(155, 28);
+    context.lineTo(155, 60);
+    context.stroke();
 }
 
 function drawE(){
-    context.fillStyle = "blue";
-    context.lineWidth = 3;
+    context.strokeStyle = "blue";
+    context.lineWidth = 10;
     context.beginPath();
-    context.rect(185, 20, 10, 50);
-    context.rect(185, 20, 30, 10);
-    context.rect(185, 40, 30, 10);
-    context.rect(185, 60, 30, 10);
-    context.fill();
+    context.moveTo(170, 20);
+    context.lineTo(170, 55);
+    context.lineTo(195, 55);
+    context.moveTo(170, 25);
+    context.lineTo(195, 25)
+    context.moveTo(170, 40);
+    context.lineTo(185, 40);
+    context.stroke();
 }
 
 function drawS(){
-    context.fillStyle = "indigo";
-    context.lineWidth = 3;
+    context.strokeStyle = "indigo";
+    context.lineWidth =10;
     context.beginPath();
-    context.rect(225, 20, 30, 10);
-    context.rect(225, 20, 10, 20);
-    context.rect(225, 40, 30, 10);
-    context.rect(245, 40, 10, 20);
-    context.rect(225, 60, 30, 10);
-    context.fill();
+    context.moveTo(230, 25);
+    context.lineTo(205, 25);
+    context.lineTo(205, 40);
+    context.lineTo(225, 40);
+    context.lineTo(225, 55);
+    context.lineTo(200, 55);
+    context.stroke();
 }

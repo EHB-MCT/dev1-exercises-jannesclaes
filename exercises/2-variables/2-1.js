@@ -11,6 +11,7 @@ function set_up() {
 	context = canvas.getContext("2d");
 }
 
+
 function drawSpring(x,y){
     context.strokeStyle = "black";
     context.lineWidth = 3;

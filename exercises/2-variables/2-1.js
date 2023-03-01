@@ -2,7 +2,8 @@
 let context;
 
 set_up();
-drawSpring(120,25);
+
+drawLines();
 
 function set_up() {
 	let canvas = document.querySelector("canvas");
@@ -11,22 +12,22 @@ function set_up() {
 	context = canvas.getContext("2d");
 }
 
-
-function drawSpring(x,y){
+function drawLines(){
+    let margin = 250;
+    let width = window.innerWidth - (2 * margin);
     context.strokeStyle = "black";
     context.lineWidth = 3;
     context.beginPath();
-    context.moveTo((canvas.width)/2, y);
-    context.lineTo(((canvas.width)/2)+x, y);
-    context.lineTo(((canvas.width)/2)-x, y*2);
-    context.lineTo(((canvas.width)/2)+x, y*2);
-    context.lineTo(((canvas.width)/2)-x, y*3);
-    context.lineTo(((canvas.width)/2)+x, y*3);
-    context.lineTo(((canvas.width)/2)-x, y*4);
-    context.lineTo(((canvas.width)/2)+x, y*4);
-    context.lineTo(((canvas.width)/2)-x, y*5);
-    context.lineTo(((canvas.width)/2)+x, y*5);
-    context.lineTo(((canvas.width)/2)-x, y);
-    context.lineTo(((canvas.width))/2,y);
+    context.moveTo(margin, 20);
+    context.lineTo((margin + width),20);
+    context.lineTo(margin,40);
+    context.lineTo((margin + width),40);
+    context.lineTo(margin,60);
+    context.lineTo((margin + width),60);
+    context.lineTo(margin,80);
+    context.lineTo((margin + width),80);
+    context.lineTo(margin,100);
+    context.lineTo((margin + width),100);
+    context.lineTo(margin, 20);
     context.stroke();
 }

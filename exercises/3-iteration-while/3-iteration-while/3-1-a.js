@@ -20,7 +20,7 @@ function drawLines() {
 		//Add it to the utils script:
 		//The function draws a line between 2 points
 		//And has the following parameters: x1, y1, x2, y2
-		Utils.drawLine(80, i * 25, 320, i * 25);
+		Utils.drawLine(75, i * 25, 325, i * 25);
 		i++;
 	}
 }

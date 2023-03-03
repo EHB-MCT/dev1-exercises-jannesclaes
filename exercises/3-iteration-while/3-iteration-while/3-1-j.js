@@ -1,6 +1,6 @@
 "use strict";
-import context from "../../scripts/context.js";
-import * as Utils from "../../scripts/utils.js";
+import context from "../../../scripts/context.js";
+import * as Utils from "../../../scripts/utils.js";
 
 draw();
 
@@ -14,12 +14,12 @@ function draw() {
 
 function drawConcentricPattern() {
     context.lineWidth = 2;
-    let i = ;
-    while () {
-        let size = ;
-        Utils.strokeCircle(, , size);
-        Utils.strokeCircle(, , size);
-        Utils.strokeCircle(, , size);
-        i = ;
+    let i = 0;
+    while (i < 11) {
+        let size = i * 15;
+        Utils.strokeCircle(100,200 , size);
+        Utils.strokeCircle(200,200 , size);
+        Utils.strokeCircle(300,200 , size);
+        i ++ ;
     }
 }

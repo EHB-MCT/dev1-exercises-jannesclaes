@@ -28,3 +28,19 @@ export function strokeCircle(x, y, radius) {
 export function rgb() {
 	context.fillStyle = (0,0,0);
 }
+
+export function even(i){
+	if(i%2 == 0) {
+		let x= 50;
+		return x;
+	}
+	else{
+		let x =75;
+		return x;
+	}
+}
+
+export function calculateDistance(x1,y1,x2,y2){
+	return Math.hypot(x2-x1,y2-y1);
+}
+

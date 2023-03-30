@@ -15,7 +15,6 @@ calculateAverage();
 function setup(){
     for (let i = 0; i < 1000; i++) {
         number[i] = getRandomInt(100);
-        console.log(number)
     }
 }
 
@@ -23,8 +22,6 @@ function calculateAverage(){
     let summ = number.reduce((a, b) => {
         return a + b;
       });
-    
-    console.log(summ);
 
     let average = summ/number.length;
 
